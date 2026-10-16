@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Sussurro</title>
+  <rect width="512" height="512" fill="#000000"/>
+  <g transform="translate(64 64) scale(8.7272727273)" fill="none" stroke="#c5ff43" stroke-width="3.5" stroke-linecap="round">
+    <path d="M4 19v6M10 13v18M16 8v28M22 4v36M28 11v22M34 16v12M40 20v4"/>
+  </g>
+</svg>

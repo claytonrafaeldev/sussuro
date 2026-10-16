@@ -1,0 +1,4 @@
+whisper.cpp / ggml: MIT, Georgi Gerganov and contributors; see LICENSE-whisper.cpp.
+cpp-httplib: MIT, Copyright (c) 2025 Yuji Hirose.
+nlohmann/json: MIT, Copyright (c) 2013-2022 Niels Lohmann.
+Full vendored source and license headers are in the pinned source archive.

@@ -1,0 +1,50 @@
+{
+  "name": "sussurro",
+  "productName": "Sussurro",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Transcrição do microfone e do áudio do computador por streaming Deepgram.",
+  "main": ".vite/build/main.cjs",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24.0.0 <25"
+  },
+  "scripts": {
+    "dev": "electron-forge start",
+    "start": "electron-forge start",
+    "typecheck": "tsc --noEmit",
+    "build": "electron-forge package",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run typecheck && npm test && npm run build",
+    "smoke:desktop": "node scripts/smoke-desktop.mjs",
+    "whisper:prepare": "node scripts/prepare-whisper.mjs",
+    "whisper:test": "node scripts/test-whisper.mjs",
+    "audio:test": "node scripts/test-system-audio.mjs",
+    "deepgram:test": "node scripts/test-deepgram.mjs",
+    "recovery:test": "node scripts/test-recovery.mjs",
+    "popup:test": "node scripts/test-popup.mjs",
+    "build:bundles": "node scripts/build-bundles.mjs",
+    "validate": "npm run typecheck && npm test && npm run build:bundles",
+    "make:deb": "electron-forge make --platform=linux --arch=x64"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "ws": "8.22.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "8.0.1",
+    "@electron-forge/plugin-vite": "8.0.1",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "electron": "44.7.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5",
+    "@electron-forge/maker-base": "8.0.1"
+  },
+  "type": "module",
+  "desktopName": "sussurro.desktop"
+}

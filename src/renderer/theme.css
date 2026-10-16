@@ -1,0 +1,11 @@
+:root {
+  color-scheme: dark;
+  --paper: #10110f;
+  --surface: #181916;
+  --ink: #ffffff;
+  --muted: #c2c5bd;
+  --accent: #c5ff43;
+  --green: #c5ff43;
+  --line: #393a38;
+  --badge: #242523;
+}
