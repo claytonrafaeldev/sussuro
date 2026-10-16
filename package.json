@@ -5,7 +5,7 @@
   "private": true,
   "description": "Transcrição do microfone e do áudio do computador por streaming Deepgram.",
   "main": ".vite/build/main.cjs",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "engines": {
     "node": ">=24.0.0 <25"
   },

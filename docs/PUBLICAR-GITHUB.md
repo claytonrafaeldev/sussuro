@@ -28,7 +28,7 @@ O README da raiz foi preparado para leitores externos. Os documentos de acompanh
 
 A seleção abaixo é explícita para não incluir a pasta inteira por engano. Ainda assim, revise os arquivos selecionados: isso não substitui uma auditoria de todo o conteúdo. Não use `git add -f` para contornar o `.gitignore`.
 
-O projeto usa **`UNLICENSED`** no `package.json`. Não acrescente um selo de licença MIT ou similar sem definir a licença correspondente.
+O Sussurro usa a **[licença MIT](../LICENSE)**. Inclua o arquivo `LICENSE` na publicação e preserve os avisos de terceiros.
 
 ## 3. Inicie o Git e selecione os arquivos
 
@@ -43,7 +43,7 @@ Se o Git pedir sua identidade para o commit, configure o nome e o e-mail desejad
 Selecione os arquivos:
 
 ```bash
-git add README.md .gitignore .env.example package.json package-lock.json
+git add README.md LICENSE .gitignore .env.example package.json package-lock.json
 git add index.html tsconfig.json vitest.config.ts vite.main.config.ts vite.preload.config.ts vite.renderer.config.ts forge.config.cjs
 git add src public tests scripts
 git add docs/PUBLICAR-GITHUB.md docs/evidencias/.gitkeep

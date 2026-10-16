@@ -41,6 +41,7 @@ module.exports = class MakerDebLocal extends Maker {
       await cp(path.join(__dirname, '../public/icon.svg'), path.join(stage, 'usr/share/icons/hicolor/scalable/apps/sussurro.svg'));
       await writeFile(path.join(stage, 'usr/share/applications/sussurro.desktop'), `[Desktop Entry]\nVersion=1.0\nType=Application\nName=Sussurro\nComment=Transcrição de áudio com Deepgram\nExec=/usr/bin/sussurro\nTryExec=/usr/bin/sussurro\nIcon=sussurro\nTerminal=false\nCategories=AudioVideo;Audio;Utility;\nStartupNotify=true\nStartupWMClass=sussurro\n`, { mode: 0o644 });
       await writeFile(path.join(stage, 'usr/share/doc/sussurro/README'), 'Sussurro\n\nAbra pelo menu de aplicativos ou pelo comando sussurro.\nConfigure sua chave Deepgram pelo popup Configurar API key. O app instalado não lê .env.\nA captura começa somente por ação do usuário. Requer internet e créditos Deepgram.\nÁudio do computador requer PipeWire (pw-dump/pw-record). Nenhum áudio bruto é salvo automaticamente.\nLicenças do Electron/Chromium e ws ficam em /opt/sussurro.\n');
+      await cp(path.join(__dirname, '../LICENSE'), path.join(stage, 'usr/share/doc/sussurro/copyright'));
       const payloadFiles = await files(stage);
       let bytes = 0; const sums = [];
       for (const file of payloadFiles) { bytes += (await stat(path.join(stage, file))).size; sums.push(`${await digest(path.join(stage, file), 'md5')}  ${file}`); }

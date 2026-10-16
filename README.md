@@ -3,7 +3,7 @@
   <h1>Sussurro</h1>
   <p><strong>Sua voz e o áudio do computador, em texto.</strong></p>
   <p>Aplicativo desktop para Linux com transcrição por streaming, fontes independentes e salvamento local.</p>
-  <p><strong>Linux amd64 · Deepgram Nova-3 · Português e inglês · MVP 0.1.0</strong></p>
+  <p><strong>Linux amd64 · Deepgram Nova-3 · Português e inglês · MVP 0.1.0 · MIT</strong></p>
   <p>
     <a href="#começar">Começar</a> ·
     <a href="#como-usar">Como usar</a> ·
@@ -203,4 +203,4 @@ Quer publicar seu próprio repositório? Siga o [guia de publicação no GitHub]
 
 ## Licença
 
-O projeto está identificado como **`UNLICENSED`** no `package.json` e ainda não contém uma licença própria de distribuição. As licenças dos componentes de terceiros permanecem junto aos respectivos componentes. Uma licença para o Sussurro deve ser definida pelo responsável antes de anunciar permissões de reutilização.
+Distribuído sob a **[licença MIT](LICENSE)**. Copyright © 2026 [claytonrafaeldev](https://github.com/claytonrafaeldev). As licenças dos componentes de terceiros permanecem junto aos respectivos componentes.
